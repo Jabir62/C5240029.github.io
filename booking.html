@@ -26,6 +26,10 @@
                 Order your favorite fragrance easily and securely.<br>
                 Fill in your details and enjoy fast delivery!
             </p>
+      <div style="margin-bottom: 1.5rem;">
+                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                <label for="agree-terms" style="color: #7b3f00; font-size: 1.05rem;">I agree to the terms and conditions</label>
+            </div>
             <form>
         <fieldset>
           <legend>Perfume Order Form</legend>
@@ -51,6 +55,18 @@
 
           <label for="quantity">Quantity:</label>
           <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required /> <br><br>
+
+          <!-- Radio buttons for Delivery Method -->
+          <label>Delivery Method:</label><br>
+          <input type="radio" id="standard" name="delivery_method" value="Standard" checked>
+          <label for="standard">Standard Delivery</label>
+          <input type="radio" id="express" name="delivery_method" value="Express">
+          <label for="express">Express Delivery</label>
+          <br><br>
+          <!-- Checkbox for Gift Wrap -->
+          <input type="checkbox" id="gift_wrap" name="gift_wrap">
+          <label for="gift_wrap">Add Gift Wrap (+$3)</label>
+          <br><br>
 
           <label for="address">Delivery Address:</label>
           <textarea id="address" name="address" rows="3" required placeholder="Your delivery address"></textarea>
